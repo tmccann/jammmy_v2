@@ -48,7 +48,7 @@ The authorization code flow with PKCE is the recommended authorization flow if y
 - [x] Add `.env` with `VITE_SPOTIFY_CLIENT_ID` and `VITE_SPOTIFY_REDIRECT_URI`, confirm `.env` is in `.gitignore`
 - [x] Update `.env.example` so the repo documents required vars without exposing real values
 - [x] Connect button on `ConnectScreen` triggers redirect
-- [ ] Generate code verifier + challenge, redirect to Spotify authorize
+- [x] Generate code verifier + challenge, redirect to Spotify authorize
 - [ ] Read `code` from URL on return, store in session storage
 - [ ] Set up `authStatus` state: `"loggedOut" | "loading" | "loggedIn" | "error"`
 - [ ] Set `authStatus` to `"loading"` while the token exchange is in flight
