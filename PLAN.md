@@ -36,7 +36,7 @@ A Spotify playlist builder built with Vite, React, and Tailwind. Connects to a u
 
 The authorization code flow with PKCE is the recommended authorization flow if you're implementing authorization in a mobile app or single page web app.
 
-- [ ] Register app in Spotify developer dashboard, set redirect URI
+- [x] Register app in Spotify developer dashboard, set redirect URI
 
 > **IMPORTANT:**
 > - **Use HTTPS** for your redirect URI, unless you are using a **loopback address**, in which case HTTP is permitted.
