@@ -6,6 +6,8 @@ const onConnect = async () => {
 };
 
 function App() {
+  // state to hold app connection status "loggedOut" | "loading" | "loggedIn" | "error"`
+  const [authStatus, setAuthStatus] = useState("loggedOut");
   useEffect(() => {
     //stored the contents of broswe search bar to urlParams
     const urlParams = new URLSearchParams(window.location.search);

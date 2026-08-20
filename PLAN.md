@@ -50,7 +50,7 @@ The authorization code flow with PKCE is the recommended authorization flow if y
 - [x] Connect button on `ConnectScreen` triggers redirect
 - [x] Generate code verifier + challenge, redirect to Spotify authorize
 - [x] Read `code` from URL on return, store in session storage
-- [ ] Set up `authStatus` state: `"loggedOut" | "loading" | "loggedIn" | "error"`
+- [x] Set up `authStatus` state: `"loggedOut" | "loading" | "loggedIn" | "error"`
 - [ ] Set `authStatus` to `"loading"` while the token exchange is in flight
 - [ ] Exchange `code` + verifier for access token, store in `localStorage`
 - [ ] On success, set `authStatus` to `"loggedIn"` and store token in state
