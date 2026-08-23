@@ -51,9 +51,9 @@ The authorization code flow with PKCE is the recommended authorization flow if y
 - [x] Generate code verifier + challenge, redirect to Spotify authorize
 - [x] Read `code` from URL on return, store in session storage
 - [x] Set up `authStatus` state: `"loggedOut" | "loading" | "loggedIn" | "error"`
-- [ ] Set `authStatus` to `"loading"` while the token exchange is in flight
-- [ ] Exchange `code` + verifier for access token, store in `localStorage`
-- [ ] On success, set `authStatus` to `"loggedIn"` and store token in state
-- [ ] On failure, set `authStatus` to `"error"` and capture an error message
-- [ ] Header renders differently per `authStatus`: logged out / loading / logged in / error
+- [x] Set `authStatus` to `"loading"` while the token exchange is in flight
+- [x] Exchange `code` + verifier for access token, store in `localStorage`
+- [x] On success, set `authStatus` to `"loggedIn"` and store token in state
+- [x] On failure, set `authStatus` to `"error"` and capture an error message
+- [x] Header renders differently per `authStatus`: logged out / loading / logged in / error
 - **Done when:** clicking connect round-trips back with a token, and all four states (logged out, loading, logged in, error) render correctly in the header
